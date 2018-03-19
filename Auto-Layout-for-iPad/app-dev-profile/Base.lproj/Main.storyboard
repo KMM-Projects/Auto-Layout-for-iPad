@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina4_7" orientation="portrait">
+    <device id="ipad9_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -21,7 +21,7 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="app_dev_profile" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Devslopes BG - June 2017-1920x1080" translatesAutoresizingMaskIntoConstraints="NO" id="7pn-5i-Wwa">
@@ -38,7 +38,7 @@
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Devslops" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hPW-o9-QDm">
-                                <rect key="frame" x="134" y="158.5" width="78.5" height="26"/>
+                                <rect key="frame" x="134" y="158" width="78.5" height="26"/>
                                 <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="19"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -99,8 +99,9 @@
                             <constraint firstItem="XqR-Ge-DI9" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="24" id="12Z-ry-j4R"/>
                             <constraint firstAttribute="trailing" secondItem="7pn-5i-Wwa" secondAttribute="trailing" id="24t-XF-jJq"/>
                             <constraint firstItem="7pn-5i-Wwa" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="3pX-nw-1fn"/>
-                            <constraint firstItem="hPW-o9-QDm" firstAttribute="centerY" secondItem="chC-QI-XWf" secondAttribute="centerY" id="8rW-6t-5Ep"/>
+                            <constraint firstItem="hPW-o9-QDm" firstAttribute="centerY" secondItem="chC-QI-XWf" secondAttribute="centerY" constant="25" id="8rW-6t-5Ep"/>
                             <constraint firstItem="XqR-Ge-DI9" firstAttribute="top" relation="lessThanOrEqual" secondItem="UEH-8L-cdj" secondAttribute="bottom" constant="21" id="Pt0-v3-9CN"/>
+                            <constraint firstItem="hPW-o9-QDm" firstAttribute="centerY" secondItem="chC-QI-XWf" secondAttribute="centerY" id="WK7-bh-oQV"/>
                             <constraint firstItem="Z5m-Y3-0c0" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Zi8-KA-Eov"/>
                             <constraint firstItem="chC-QI-XWf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="dVa-6a-HwU"/>
                             <constraint firstItem="hPW-o9-QDm" firstAttribute="leading" secondItem="chC-QI-XWf" secondAttribute="trailing" constant="8" id="eq9-ra-IDL"/>
@@ -112,6 +113,17 @@
                             <constraint firstItem="Z5m-Y3-0c0" firstAttribute="top" secondItem="chC-QI-XWf" secondAttribute="bottom" constant="16" id="wsa-MO-SfS"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="WK7-bh-oQV"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=regular">
+                            <mask key="constraints">
+                                <exclude reference="8rW-6t-5Ep"/>
+                                <include reference="WK7-bh-oQV"/>
+                            </mask>
+                        </variation>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
